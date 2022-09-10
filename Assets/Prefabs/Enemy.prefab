@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 373197980}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a69f5a1b0831e4a84392b7a6d7d61f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 50
+  shootDelay: 1
+  bulletSpeed: 110
+  detectionRange: 60
   playerPos: {fileID: 0}
   bulletPrefab: {fileID: 600769949514622787, guid: 6e9e0098629ce7b4bbc86f43c7f190ed, type: 3}

@@ -8,6 +8,7 @@ namespace BEAN
     {
         [Header("Shooting")]
         [SerializeField] private float shootDelay = 2f;
+        [SerializeField] private float bulletSpeed = 70f;
 
         [Header("Detection")]
         [SerializeField] private float detectionRange = 50f;
@@ -39,8 +40,10 @@ namespace BEAN
         // Shoot at the player
         private void AttackPlayer()
         {
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Bullet>().playerPos = playerPos;
+            GameObject bulletObj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            Bullet bullet = bulletObj.GetComponent<Bullet>();
+            bullet.playerPos = playerPos;
+            bullet.bulletSpeed = bulletSpeed;
         }
     }
 }

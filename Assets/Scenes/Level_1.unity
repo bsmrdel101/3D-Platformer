@@ -1029,17 +1029,13 @@ PrefabInstance:
       propertyPath: playerPos
       value: 
       objectReference: {fileID: 849773099}
-    - target: {fileID: 373197980, guid: 562d006f3c3a8b648a65c8db8d300b3a, type: 3}
-      propertyPath: shootDelay
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7606963703836829021, guid: 562d006f3c3a8b648a65c8db8d300b3a, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7606963703836829021, guid: 562d006f3c3a8b648a65c8db8d300b3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.08
+      value: 41.21
       objectReference: {fileID: 0}
     - target: {fileID: 7606963703836829021, guid: 562d006f3c3a8b648a65c8db8d300b3a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1047,7 +1043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7606963703836829021, guid: 562d006f3c3a8b648a65c8db8d300b3a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.19
+      value: 56.6
       objectReference: {fileID: 0}
     - target: {fileID: 7606963703836829021, guid: 562d006f3c3a8b648a65c8db8d300b3a, type: 3}
       propertyPath: m_LocalRotation.w

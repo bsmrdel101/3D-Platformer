@@ -28,11 +28,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody rb;
 
 
-    void Start()
-    {
-        // rb.freezeRotation = true;
-    }
-
     void Update()
     {
         // Ground check
@@ -62,9 +57,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(jumpKey) && canJump && grounded)
         {
             canJump = false;
-
             Jump();
-
             Invoke(nameof(ResetJump), jumpCooldown);
         }
     }
@@ -86,7 +79,6 @@ public class PlayerMovement : MonoBehaviour
     private void SpeedControl()
     {
         Vector3 flatVel = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-
         // Limit velocity if needed
         if (flatVel.magnitude > moveSpeed)
         {
@@ -99,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
     {
         // Reset y velocity
         rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
 

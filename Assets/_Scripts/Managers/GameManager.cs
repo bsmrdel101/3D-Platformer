@@ -6,6 +6,6 @@ namespace BEAN
 {
     public class GameManager : MonoBehaviour
     {
-        
+        private string testName;
     }
 }

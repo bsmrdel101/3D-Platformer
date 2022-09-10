@@ -70,7 +70,6 @@ public class PlayerMovement : MonoBehaviour
         // On ground
         if (grounded)
             rb.AddForce(moveDir.normalized * moveSpeed * 10, ForceMode.Force);
-
         // In air
         else if (!grounded)
             rb.AddForce(moveDir.normalized * moveSpeed * 10 * airMultiplier, ForceMode.Force);

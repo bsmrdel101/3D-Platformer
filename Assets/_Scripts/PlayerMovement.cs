@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private float jumpCooldown;
     [SerializeField] private float airMultiplier;
-    private bool canJump = true;
+    private bool canJump = false;
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
